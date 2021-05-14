@@ -1,0 +1,129 @@
+body{
+    min-height:100%;
+    font-style: italic;
+    background: #008B8B;
+}
+
+
+h1{
+    font-style: italic;
+    background: #A9A9A9;
+    color:black;
+    margin: 0;
+    padding:10px 28px;
+    font-weight: normal;
+}
+input{
+  font-style: italic;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+    height:50px ;
+    font-size: 20px;
+    font-weight: 0.5px;
+    padding-left:25px;
+    border: 3px solid gray;
+    color: gray;
+}
+input:focus{
+    background: #edf1f5;
+    border: 3px solid #86a8e7;
+    outline:none;
+    color: #86a8e7;
+}
+
+span{
+    margin-right: 10px;
+    text-align:center;
+    height:50px;
+    width: 0;
+    opacity: 0;
+    -webkit-transition:0.3s;
+    transition: 0.3s linear;
+}
+
+i{
+    cursor: pointer;
+}
+button{
+  margin: 50px;
+    background-color:#A9A9A9;
+    border: none;
+    color: black;
+    padding: 20px 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius:15px;
+    font-style: italic;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #86a8e7;
+}
+
+#buttons{
+    display:inline-block;
+    text-align:center;
+    margin-left:22%;
+    position:absolute;
+    bottom:5px;
+}
+#todo{
+    margin: 0 auto ;
+    box-shadow: 0 0 1em black;
+    max-width: 400px;
+    height:100%;
+    background:white;
+    position:relative;
+}
+
+.todos{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.todos li{
+    background: #f7f7f7;
+    height:50px;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.todos li:nth-child(2n){
+    background:#edf1f5;
+}
+.todos li:hover span{
+    width: 50px;
+    opacity: 1.0;
+    margin-left: 5px;
+}
+.display{
+    display:none;
+    transition: 0.3s linear;
+}
+.checked{
+    color:gray;
+    text-decoration:line-through;
+}
+
+.fa-pencil-alt{
+    float: right;
+    padding-top: 8px;
+}
+.fa-trash-alt{
+    color:#7f7fd5;
+}
+
+    #todo{
+        width:100%;
+        height:100%;
+    }
+}
